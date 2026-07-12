@@ -14,13 +14,14 @@ void swap1(int p, int q){
 
 void swap2(int *p, int *q){
     int r ;
-    printf ("p = %d, q = %d. &p = %p, &q = %p \n", *p, *q, p, q) ;
-    
+    printf ("*p = %d, *q = %d. p = %p, q = %p \n", *p, *q, p, q) ;
+    printf ("&p = %p, &q = %p\n", &p, &q) ;
+
     r = *p ;
     *p = *q ;
     *q = r ;
     
-    printf ("p = %d, q = %d. &p = %p, &q = %p \n", *p, *q, p, q) ;
+    printf ("*p = %d, *q = %d. p = %p, q = %p \n", *p, *q, p, q) ;
 } ;
 
 int main(){
